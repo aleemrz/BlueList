@@ -281,7 +281,7 @@
 				TargetAttributes = {
 					0BB6C1F41A3B518600BB7D1F = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 3PB3GC42T2;
+						DevelopmentTeam = N5R4968HQ7;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -544,7 +544,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/bluelist-objective-c",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = myprinter.mybluemix.net;
+				PRODUCT_BUNDLE_IDENTIFIER = com.putitout.bluelist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -573,7 +573,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/bluelist-objective-c",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = myprinter.mybluemix.net;
+				PRODUCT_BUNDLE_IDENTIFIER = com.putitout.bluelist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
