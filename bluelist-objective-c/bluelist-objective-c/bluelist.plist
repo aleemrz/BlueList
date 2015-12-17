@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationRoute</key>
+	<string>http://myprinter.mybluemix.net</string>
+	<key>applicationId</key>
+	<string>c14b2cc5-736a-4dec-a875-d22f0acd0faa</string>
+	<key>encryptionPassword</key>
+	<string></string>
+</dict>
+</plist>
