@@ -5,6 +5,7 @@ PODS:
   - Bolts/AppLinks (1.5.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.5.0)
+  - CDRTranslucentSideBar (1.0.3)
   - CDTDatastore/common-dependencies (1.0.0):
     - CDTDatastore/no-arc
     - CocoaLumberjack (~> 2.0)
@@ -46,6 +47,7 @@ PODS:
     - SQLCipher/common
 
 DEPENDENCIES:
+  - CDRTranslucentSideBar
   - CDTDatastore/SQLCipher
   - IMFCore
   - IMFFacebookAuthentication
@@ -54,6 +56,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  CDRTranslucentSideBar: b13a1792a8c495ea8f2356846a95bf7119cec7b0
   CDTDatastore: ff31119f168689ab9ab7b339b02327f21a2b3cfa
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
   Facebook-iOS-SDK: 08689c2690dc4e087b9c8e171e48667608b72a2a

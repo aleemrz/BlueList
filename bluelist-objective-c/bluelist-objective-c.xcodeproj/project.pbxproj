@@ -27,6 +27,9 @@
 		879456FE1C16535B0001E630 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 879456FD1C16535B0001E630 /* DetailViewController.m */; };
 		87C83E8C1BFEC247008B6E75 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C83E8B1BFEC247008B6E75 /* CoreLocation.framework */; };
 		8BFF6532BF3FDAEDCBA4DED5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C08B353A5DAAA323AC1F1D /* libPods.a */; };
+		A5EAD9B81C248546009D0492 /* LeftBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EAD9B71C248546009D0492 /* LeftBarViewController.m */; };
+		A5EAD9BF1C24937B009D0492 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EAD9BE1C24937B009D0492 /* User.m */; };
+		A5EAD9C21C249A93009D0492 /* EditUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5EAD9C11C249A93009D0492 /* EditUserViewController.m */; };
 		FAA0E7221BB2DE8C00C6E58A /* CloudantHttpInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA0E7211BB2DE8C00C6E58A /* CloudantHttpInterceptor.m */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,12 @@
 		879456FC1C16535B0001E630 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		879456FD1C16535B0001E630 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		87C83E8B1BFEC247008B6E75 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A5EAD9B61C248546009D0492 /* LeftBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftBarViewController.h; path = LeftBarViewController/LeftBarViewController.h; sourceTree = "<group>"; };
+		A5EAD9B71C248546009D0492 /* LeftBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftBarViewController.m; path = LeftBarViewController/LeftBarViewController.m; sourceTree = "<group>"; };
+		A5EAD9BD1C24937B009D0492 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A5EAD9BE1C24937B009D0492 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A5EAD9C01C249A93009D0492 /* EditUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditUserViewController.h; path = EditUser/EditUserViewController.h; sourceTree = "<group>"; };
+		A5EAD9C11C249A93009D0492 /* EditUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditUserViewController.m; path = EditUser/EditUserViewController.m; sourceTree = "<group>"; };
 		F5DDFD4173E8585DD8F66433 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FA53C20A1BB2C9A700A126F1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FAA0E7201BB2DE8C00C6E58A /* CloudantHttpInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudantHttpInterceptor.h; path = "bluelist-objective-c/CloudantHttpInterceptor.h"; sourceTree = "<group>"; };
@@ -123,6 +132,7 @@
 		0BB6C1F71A3B518600BB7D1F /* bluelist-objective-c */ = {
 			isa = PBXGroup;
 			children = (
+				A5EAD9BC1C249358009D0492 /* Models */,
 				0BB6C2311A3B5BBF00BB7D1F /* authentication */,
 				0BB6C2331A3B5BD800BB7D1F /* controller */,
 				FAA0E71C1BB2DE4200C6E58A /* http */,
@@ -177,6 +187,8 @@
 		0BB6C2331A3B5BD800BB7D1F /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				A5EAD9C31C249A98009D0492 /* EditUser */,
+				A5EAD9B51C24842D009D0492 /* LeftBarViewController */,
 				0BB6C22B1A3B5A2900BB7D1F /* TableViewController.h */,
 				0BB6C22C1A3B5A2900BB7D1F /* TableViewController.m */,
 				7F5B78D61A7E896E00516F59 /* AuthenticationViewController.h */,
@@ -187,6 +199,7 @@
 				879456FD1C16535B0001E630 /* DetailViewController.m */,
 			);
 			name = controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		0BB6C2341A3B5BF400BB7D1F /* images */ = {
@@ -208,6 +221,41 @@
 				13C08B353A5DAAA323AC1F1D /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5EAD9B51C24842D009D0492 /* LeftBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A5EAD9BB1C249164009D0492 /* CustomCell */,
+				A5EAD9B61C248546009D0492 /* LeftBarViewController.h */,
+				A5EAD9B71C248546009D0492 /* LeftBarViewController.m */,
+			);
+			name = LeftBarViewController;
+			sourceTree = "<group>";
+		};
+		A5EAD9BB1C249164009D0492 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		A5EAD9BC1C249358009D0492 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5EAD9BD1C24937B009D0492 /* User.h */,
+				A5EAD9BE1C24937B009D0492 /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5EAD9C31C249A98009D0492 /* EditUser */ = {
+			isa = PBXGroup;
+			children = (
+				A5EAD9C01C249A93009D0492 /* EditUserViewController.h */,
+				A5EAD9C11C249A93009D0492 /* EditUserViewController.m */,
+			);
+			name = EditUser;
 			sourceTree = "<group>";
 		};
 		EC232F40882C637B05F3C96A /* Pods */ = {
@@ -392,13 +440,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5EAD9BF1C24937B009D0492 /* User.m in Sources */,
 				0BB6C2221A3B59EF00BB7D1F /* CustomAuth.m in Sources */,
 				FAA0E7221BB2DE8C00C6E58A /* CloudantHttpInterceptor.m in Sources */,
 				0BB6C1FE1A3B518600BB7D1F /* AppDelegate.m in Sources */,
 				879456FE1C16535B0001E630 /* DetailViewController.m in Sources */,
 				0BB6C22F1A3B5A2900BB7D1F /* TableViewController.m in Sources */,
+				A5EAD9C21C249A93009D0492 /* EditUserViewController.m in Sources */,
 				7F5B78D51A7E894E00516F59 /* AuthenticationViewController.m in Sources */,
 				7FB2E9501A7EABF3006EAE71 /* PushViewController.m in Sources */,
+				A5EAD9B81C248546009D0492 /* LeftBarViewController.m in Sources */,
 				0BB6C1FB1A3B518600BB7D1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
